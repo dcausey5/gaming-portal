@@ -23,7 +23,7 @@ const Sims = () => {
   <div className="flex space-x-4">
     <div className="flex flex-col items-center">
       <h3>Live Streams</h3>
-      <Link href="https://www.youtube.com/channel/UC28ZciCEOs5ruffKqyvrcYA" target="_blank" rel="noopener noreferrer">
+      <Link href="https://www.youtube.com/channel/UCXzpX-rTi13etXc1UP3Cn4Q" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
           src={Youtube}
@@ -36,7 +36,7 @@ const Sims = () => {
 
     <div className="flex flex-col items-center">
       <h3>Reviews</h3>
-      <Link href="https://www.ign.com/games/call-of-duty-modern-warfare-ii-2022/user-reviews" target="_blank" rel="noopener noreferrer">
+      <Link href="https://www.ign.com/games/the-sims-4/user-reviews" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
           src={IGN}

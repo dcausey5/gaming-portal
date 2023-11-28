@@ -23,7 +23,7 @@ const CS2 = () => {
   <div className="flex space-x-4">
     <div className="flex flex-col items-center">
       <h3>Live Streams</h3>
-      <Link href="https://www.youtube.com/channel/UC28ZciCEOs5ruffKqyvrcYA" target="_blank" rel="noopener noreferrer">
+      <Link href="https://www.youtube.com/channel/UCD-6YWTBwjRFHKBDNpbQgyQ" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
           src={Youtube}
@@ -36,7 +36,7 @@ const CS2 = () => {
 
     <div className="flex flex-col items-center">
       <h3>Reviews</h3>
-      <Link href="https://www.ign.com/games/call-of-duty-modern-warfare-ii-2022/user-reviews" target="_blank" rel="noopener noreferrer">
+      <Link href="https://www.ign.com/games/counter-strike-2" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
           src={IGN}
