@@ -4,60 +4,68 @@ import Nav from '@/components/nav/nav';
 import Image from "next/image";
 import Link from 'next/link'
 import Logo from "../../public/logos/logo_full_transparent.png";
-import Youtube from "../../public/logos/youtube-logo-png-2074.png";
 import IGN from "../../public/logos/ign-logo-transparent.png";
+import Youtube from "../../public/images/youtube.png";
+import Twitch from "../../public/logos/twitch.png";
+import Steam from "../../public/images/steam.png";
 
 const CS2 = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-slate-700">
       <div className="max-w-screen text-white p-6 text-center bg-slate-900">
         <div className="max-w-screen-xl m-auto">
           <Nav></Nav>
           <h1>Welcome to the Counter Strike 2 Page</h1>
-          <p>This is the Counter Strike 2 content.</p>
+
         </div>
       </div>
 
       <div className="flex justify-center items-center h-full">
-      <main className="flex-grow pb-16" style={{ paddingInline: '21rem' }}>
-  <div className="flex space-x-4">
-    <div className="flex flex-col items-center">
-      <h3>Live Streams</h3>
-      <Link href="https://www.youtube.com/channel/UCD-6YWTBwjRFHKBDNpbQgyQ" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='rounded-lg'
-          src={Youtube}
-          alt=""
-          width={350}
-          height={350}
-        />
+      <main className="flex-grow justify-center items-center pb-8 text-white">
+  <div className="flex justify-center items-center space-x-4">
+    
+    {/* Watch Section */}
+    <div className="flex flex-col items-center mt-10 text-center">
+      <h1>Watch</h1>
+      <Link href="https://www.twitch.tv/directory/category/counter-strike" target="_blank" rel="noopener noreferrer">
+          <Image
+            className='rounded-lg'
+            src={Twitch}
+            alt=""
+            width={350}
+            height={350}
+          />
       </Link>
     </div>
 
-    <div className="flex flex-col items-center">
-      <h3>Reviews</h3>
-      <Link href="https://www.ign.com/games/counter-strike-2" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='rounded-lg'
-          src={IGN}
-          alt=""
-          width={200}
-          height={200}
-        />
+    {/* Play Section */}
+    <div className="flex flex-col items-center text-center mr-20">
+      <h1>Play</h1>
+      <Link href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank" rel="noopener noreferrer">
+          <Image
+            className='rounded-lg mt-10'
+            src={Steam}
+            alt=""
+            width={250}
+            height={250}
+          />
       </Link>
     </div>
 
-    <div className="flex flex-col items-center"><p>Learn How to Develop in C++</p>
+    {/* Code Section */}
+    <div className="flex flex-col items-center mt-10 text-center">
+      <h1>Code</h1>
       <Link href="https://www.youtube.com/watch?v=g7yv5VOsM5A" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='rounded-lg'
-          src={Youtube}
-          alt=""
-          width={250}
-          height={250}
-        />
+          <Image
+            className='rounded-lg'
+            src={Youtube}
+            alt=""
+            width={200}
+            height={200}
+          />
       </Link>
     </div>
+
   </div>
 </main>
 
@@ -65,7 +73,7 @@ const CS2 = () => {
 
 
 
-      <footer className="bg-slate-900 rounded-lg shadow dark:bg-gray-900">
+      <footer className="bg-slate-900 rounded-lg shadow dark:bg-gray-900 min-h-screen">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <Image
